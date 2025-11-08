@@ -1,10 +1,9 @@
-const printStatement = (arg1, arg2) => {
-  console.log(`${arg1} is ${arg2}`);
-};
+if (process.argv.length === 4) {
+  const firstArgument = process.argv[2];
+  const secondArgument = process.argv[3];
 
-console.log("--- Test Case 1 ---");
-printStatement("Banana", "Yellow");
-
-console.log("\n--- Test Case 2 ---");
-printStatement("The script", "completed successfully");
-
+  console.log(`${firstArgument} is ${secondArgument}`);
+} else {
+  console.log("Error: Please provide exactly two arguments.");
+  console.log("Usage: node statement.js <argument1> <argument2>");
+}
