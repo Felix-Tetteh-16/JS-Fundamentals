@@ -1,9 +1,5 @@
-if (process.argv.length === 4) {
-  const firstArgument = process.argv[2];
-  const secondArgument = process.argv[3];
+const arg1 = process.argv[2];
 
-  console.log(`${firstArgument} is ${secondArgument}`);
-} else {
-  console.log("Error: Please provide exactly two arguments.");
-  console.log("Usage: node statement.js <argument1> <argument2>");
-}
+const arg2 = process.argv[3];
+
+console.log(arg1 + " is " + arg2);
